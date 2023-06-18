@@ -59,15 +59,15 @@ const Flames = () => {
 
     return (
         <div>
-            <input data-testid="input1" placeholder="Enter first name" name="First Name" value={fname} onChange={(e) => { setFname(e.target.value.toLowerCase()) }}></input>
-            <input data-testid="input2" placeholder="Enter second name" name="Second Name" value={sname} onChange={(e) => { setSname(e.target.value.toLowerCase()) }}></input>
+            <input data-testid="input1" placeholder="Enter first name" name="name1" value={fname} onChange={(e) => { setFname(e.target.value.toLowerCase()) }}></input>
+            <input data-testid="input2" placeholder="Enter second name" name="name2" value={sname} onChange={(e) => { setSname(e.target.value.toLowerCase()) }}></input>
             <button data-testid="calculate_relationship" onClick={match}>Calculate Relationship Future</button>
             <button data-testid="clear" onClick={clear}>Clear</button>
 
-            {
-                output &&
-                <h3 data-testid="answer">{output}</h3>
-            }
+            <h3 data-testid="answer">{output}</h3>
+            {/* { 
+                 output &&
+            } */}
         </div>
     )
 }
