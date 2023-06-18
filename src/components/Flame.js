@@ -24,29 +24,27 @@ const Flames = () => {
             }
         }
 
-        let remainsum = (firstName.length + secondName.length) % 6;
-
-        switch (remainsum) {
+        switch((firstName.length + secondName.length) % 6){
+            case 0:
+                setAnswer("Siblings");
+                break;
             case 1:
-                setOutput('Friends');
+                setAnswer("Friends");
                 break;
             case 2:
-                setOutput('Love');
+                setAnswer("Love");
                 break;
             case 3:
-                setOutput('Affection');
+                setAnswer("Affection");
                 break;
             case 4:
-                setOutput('Marriage');
+                setAnswer("Marriage");
                 break;
             case 5:
-                setOutput('Enemy');
-                break;
-            case 0:
-                setOutput('Siblings');
+                setAnswer("Enemy");
                 break;
             default:
-                console.log("out of range");
+                setAnswer("");
         }
     }
 
