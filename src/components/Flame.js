@@ -12,7 +12,7 @@ const Flames = () => {
             return;
         }
         let firstName = fname;
-        let secondName = sname;
+        let secondName = sname; 
 
         for (let i = 0; i < firstName.length; i++) {
             for (let j = 0; j < secondName.length; j++) {
